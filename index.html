@@ -26,6 +26,7 @@
       </ul>
       <a href="">
         <img src="img/cart-icon.svg">
+        <span>Корзина</span>
       </a>
     </nav>
 
@@ -36,7 +37,7 @@
 
   <main> 
     <section>
-      <h2>Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <ul>
         <li>
           <img src="img/illustration-1 1 .jpg" alt="Веб-сайты">
@@ -94,7 +95,7 @@
     </section>
   
     <section>
-      <h2>Наши партнеры</h2>
+      <h2 class="visually-hidden">Наши партнеры</h2>
         <img src="img/logo-1 1.svg" alt="HTML">
         <img src="img/logo-2 1.svg" alt="BORODINSKI">
         <img src="img/logo-3 1.svg" alt="PINK">
@@ -112,6 +113,27 @@
       <img src="img/map-marker 1.png" alt="map-marker">
       <img src="img/map 1.png" alt="map">
     </section>   
+
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+
+        <p>
+          <label for="appointment-email">Ваш email:</label>
+          <input id="appointment-email" type="email" name="login" placeholder="email@example.com">
+        </p>
+
+        <p>
+          <label for="appointment-letter">Текст письма:</label>
+          <input id="appointment-letter" type="text" name="text" placeholder="В свободной форме">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </main>
   <footer>
     <ul>
