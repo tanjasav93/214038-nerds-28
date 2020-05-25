@@ -117,20 +117,21 @@
     <section>
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="appointment-name">Ваше имя:</label>
-          <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
+        <div>
+          <div>
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
 
-        <p>
-          <label for="appointment-email">Ваш email:</label>
-          <input id="appointment-email" type="email" name="login" placeholder="email@example.com">
-        </p>
-
-        <p>
+          <div>
+            <label for="appointment-email">Ваш email:</label>
+            <input id="appointment-email" type="email" name="login" placeholder="email@example.com">
+          </div>
+        </div>
+        <div>
           <label for="appointment-letter">Текст письма:</label>
-          <input id="appointment-letter" type="text" name="text" placeholder="В свободной форме">
-        </p>
+          <textarea id="appointment-letter" type="text" name="text" placeholder="В свободной форме"></textarea>
+        </div>
         <button type="submit">Отправить</button>
       </form>
     </section>
