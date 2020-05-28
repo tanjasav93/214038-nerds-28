@@ -1,0 +1,257 @@
+:root {
+    --basis-black: #000;
+    --basis-dark: #283136;
+    --basis-mini-dark: #444;
+    --basic-neutral: #666;
+    --basic-extra-light: #eee;
+    --basic-white: #fff;
+
+    --special: #888;
+    --basis-red: #FB565A;
+    --basis-green: #00CA74;
+    --basis-yellow: #EFC849;
+}
+
+
+
+/* Global */
+
+body {
+  min-width: 1177px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+  align-items: center;
+  color: var(basis-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+img {
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation,
+.slide {
+  background-color: var(basic-extra-light);
+}
+
+.main-navigation-wrapper {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* Basket */
+
+.site-navigation a,
+.basket  {
+     font-weight: 500;
+}
+
+.site-navigation:active,
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket span:hover,
+.basket span:focus,
+.basket span:active {
+   color: var(--basis-red);
+}
+
+/*Slider*/
+
+h1 {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.btn-slide {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--basic-white);
+    background-color:var(--basis-red);
+    border: none;
+    text-transform: uppercase;
+    width: 240px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+/* Features */
+
+.features-list {
+    list-style: none;
+} 
+
+.feature-item h3{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+.feature-item p {
+    color:var(--basis-dark);
+    align-items: center;
+  }
+
+
+
+  /* Button */
+
+
+.feature-item button {
+    font: inherit;
+    text-align: center;
+    color:var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border:none ;
+    border-radius: 3px;
+    width: 160px;
+    height: 50px;
+    left: 540px;
+    top: 922px;
+}
+ 
+.btn1 {
+    background-color:var(--basis-red);
+}
+
+.btn2 {
+    background-color:var(--basis-green);
+}
+
+.btn3 {
+    background-color:var(--basis-yellow);
+}
+
+.feature-item button:hover,
+.feature-item button:focus,
+.feature-item button:active,
+.btn-studio:hover,
+.btn-studio:focus,
+.btn-studio:active,
+.btn-slide:hover,
+.btn-slide:focus,
+.btn-slide:active {
+    background-color: var(--special);  
+}
+
+
+.illustration {
+    width: 300px;
+    height: 146px;
+}
+
+.order-list {
+    list-style: none;
+}
+
+.web-studio h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.index-columns h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--basis-dark);
+}
+
+.nerds-illustration {
+    width: 360px;
+    height: 208px;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.percent {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.description {
+    color: #283136;
+    line-height: 18px;
+}
+
+/*Contacts*/
+
+.name-studio {
+    text-transform: uppercase;
+    color: var(--basis-black);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.adress-studio,
+.phone-studio {
+    line-height: 18px;
+}
+
+.btn-studio {
+    background:var(--basis-red);
+    border-radius: 3px;
+    width: 219px;
+    height: 50px;
+    border: none;
+    color:var(--basic-white);
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Main menu*/
+
+.footer-social {
+    list-style: none;
+}
+
+.social-button img {
+    width: 81px;
+    height:81px;
+    border-radius: 50%;
+    background-color: var(--basic-extra-light);
+}
+
+.vk {
+    width: 27px;
+    height: 15px;
+}
+
+.slogan {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+}

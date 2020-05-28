@@ -3,94 +3,112 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
-  <header>
-    <nav>
-      <a href="">
-        <img src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип nerd's">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="">
+        <img src="img/nerds-logo.svg"  width="160" height="65"  alt="Логотип nerd's">
       </a>
-      <ul>
-        <li>
-          <a href="blank.html">Студия</a>
-        </li> 
-        <li>
-            <a href="clients.html">Клиенты</a>
-        </li>
-        <li>
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-      <a href="">
-        <img src="img/cart-icon.svg">
-        <span>Корзина</span>
-      </a>
+      <div class="main-navigation-wrapper">
+        <ul class="site-navigation">
+          <li>
+            <a href="blank.html">Студия</a>
+          </li> 
+          <li>
+              <a href="clients.html">Клиенты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <div class="basket">
+          <a href="">
+            <img src="img/cart-icon.svg">
+            <span>Корзина</span>
+          </a>
+        </div>
+      </div>
     </nav>
 
-    <section>
-      <img src="img/slide1.png" alt="Долго, дорого, скрупулезно">
+    <section class="slide">
+      <img src="img/nerds-index-slide1 1.png" alt="Долго, дорого, скрупулезно"> 
+      <h1>Долго, дорого, скрупулезно.</h1>
+      <p>
+        Математически выверенный дизайн для вашего сайта или мобильного приложения.
+      </p>
+      <button class="btn-slide"type="button">
+        Узнать больше
+      </button>
     </section>
   </header>
 
-  <main> 
-    <section>
+  <main class="container"> 
+
+    <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
-      <ul>
-        <li>
-          <img src="img/illustration-1 1 .jpg" alt="Веб-сайты">
+      <ul class="features-list">
+        <li  class="feature-item">
+          <img src="img/illustration-1 1 .jpg" class="illustration" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button type="button">Заказать</button>
+          <button class="btn1" type="button">Заказать</button>
         </li>
-        <li>
-          <img src="img/illustration-2 1 .jpg" alt="Приложения">
+        <li class="feature-item">
+          <img src="img/illustration-2 1 .jpg" class="illustration" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button type="button">Заказать</button>
+          <button class="btn2" type="button">Заказать</button>
         </li>
-        <li>
-          <img src="img/illustration-3 1.jpg" alt="Презентации">
+        <li class="feature-item">
+          <img src="img/illustration-3 1.jpg" class="illustration" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button type="button">Заказать</button>
+          <button class="btn3" type="button">Заказать</button>
         </li>
+      </ul>
     </section>
 
-    <section>
-      <div>
+    <section class="index-columns" >
+      <div class="web-studio">
         <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
         </p>
         <h4>Выполняем заказы на разработку:</h4>
-          <ul>
+          <ul class="order-list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
       </div>
 
-      <div>
-        <img src="img/nerds-illustration 1.png" alt="Nerd's illustration">
-        <h4>C 2004 года Любим точность во всем:</h4>
-        <div>
-          <span>146</span>
-          <span>%</span>
-          <p>Уровень самоотдачи</p>
+      <div class="indicators">
+        <div class="nerds-illustration">
+          <img src="img/nerds-illustration 1.png" alt="Nerd's illustration">
         </div>
-        <div>
-          <span>100</span>
-          <span>%</span>
-          <span>Соблюдение сроков</span>
-        </div>
-        <div>
-          <span>50</span>
-          <span>%</span>
-          <span>Минимальная предоплата</span>
-        </div>
+          <h4>C 2004 года Любим точность во всем:</h4>
+          <div>
+            <span class="number">146</span>
+            <span class="percent">%</span>
+            <p class="description">Уровень самоотдачи</p>
+          </div>
+          <div>
+            <span class="number">100</span>
+            <span class="percent">%</span>
+            <p class="description">Соблюдение сроков</p>
+          </div>
+          <div>
+            <span class="number">50</span>
+            <span class="percent">%</span>
+            <p class="description">Минимальная предоплата</p>
+          </div>
       </div>    
     </section>
   
@@ -103,13 +121,13 @@
     </section>
 
     <section>
-      <h2>Контактная информация</h2>
+      <h2 class="visually-hidden">Контактная информация</h2>
         <div>
-          <p>NЁRDS DESIGN STUDIO</p>
-          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8тел.</p>
-          <p> +7 (812) 275-75-75</p>
-          <button>Напишите нам</button>
-          </div>
+          <p class="name-studio">NЁRDS DESIGN STUDIO</p>
+          <p class="adress-studio">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8тел.</p>
+          <p class="phone-studio"> +7 (812) 275-75-75</p>
+          <button class="btn-studio">Напишите нам</button>
+        </div>
       <img src="img/map-marker 1.png" alt="map-marker">
       <img src="img/map 1.png" alt="map">
     </section>   
@@ -136,20 +154,26 @@
       </form>
     </section>
   </main>
-  <footer>
-    <ul>
-      <li>
-        <a href="#"><img src="img/vk-icon.svg" alt="vk">Вконтакте</a>
-      </li>
-      <li>
-        <a href="#"><img src="img/fb-icon.svg" alt="fb">Фейсбук</a>
-      </li>
-      <li>
-        <a href="#"><img src="img/insta-icon.svg" alt="insta">Инстаграм</a>
-      </li>
-    </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+
+  <footer class="page-footer main-footer">
+    <div class="container">
+      <ul class="footer-social">
+        <li>
+          <a class="social-button" href="#">
+            <img src="img/vk-icon.svg" class="vk" alt="vk"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <img src="img/fb-icon.svg" class="fb" alt="fb"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <img src="img/insta-icon.svg" class="insta" alt="insta"></a>
+        </li>
+      </ul>
+        <p class="slogan">Давайте дружить, это выгодно!</p>
+        <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
 </body> 
 </html>
