@@ -1,15 +1,15 @@
 :root {
     --basis-black: #000;
-    --basis-dark: #283136;
-    --basis-mini-dark: #444;
+    --basis-dark-black: #283136;
+    --medium-gray: #444;
     --basic-neutral: #666;
     --basic-extra-light: #eee;
     --basic-white: #fff;
 
     --special: #888;
-    --basis-red: #FB565A;
-    --basis-green: #00CA74;
-    --basis-yellow: #EFC849;
+    --basis-red: #fb565a;
+    --basis-green: #00ca74;
+    --basis-yellow: #efc849;
 }
 
 
@@ -27,8 +27,7 @@ body {
   background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
-  align-items: center;
-  color: var(basis-black);
+  color: var(--basis-black);
 }
 
 a {
@@ -43,6 +42,10 @@ img {
   height: auto;
 }
 
+.main-header {
+    background-color: var(--basic-extra-light);
+}
+
 /* Main navigation */
 
 .main-navigation,
@@ -53,18 +56,23 @@ img {
 .main-navigation-wrapper {
   font-size: 16px;
   line-height: 30px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 
 .site-navigation {
   list-style: none;
 }
 
+.site-navigation a,
+.basker-color {
+   color: var(--basis-black);
+}
+
 /* Basket */
 
-.site-navigation a,
-.basket  {
+.main-navigation-wrapper {
      font-weight: 500;
+     
 }
 
 .site-navigation:active,
@@ -86,7 +94,6 @@ h1 {
 
 .btn-slide {
     font-weight: 500;
-    font-size: 16px;
     line-height: 18px;
     text-align: center;
     color: var(--basic-white);
@@ -104,7 +111,7 @@ h1 {
     list-style: none;
 } 
 
-.feature-item h3{
+.feature-item h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -113,7 +120,7 @@ h1 {
   }
 
 .feature-item p {
-    color:var(--basis-dark);
+    color:var(--basis-dark-black);
     align-items: center;
   }
 
@@ -122,35 +129,36 @@ h1 {
   /* Button */
 
 
-.feature-item button {
+.feature-item .btn {
     font: inherit;
     text-align: center;
     color:var(--basic-white);
     vertical-align: middle;
     text-transform: uppercase;
-    border:none ;
+    border:none;
     border-radius: 3px;
     width: 160px;
     height: 50px;
     left: 540px;
     top: 922px;
+    font-weight: 500;
 }
  
-.btn1 {
+.feature-item:first-child .btn {
     background-color:var(--basis-red);
 }
 
-.btn2 {
+.feature-item:nth-child(2) .btn {
     background-color:var(--basis-green);
 }
 
-.btn3 {
+.feature-item:last-child .btn {
     background-color:var(--basis-yellow);
 }
 
-.feature-item button:hover,
-.feature-item button:focus,
-.feature-item button:active,
+.feature-item .btn:hover,
+.feature-item .btn:focus,
+.feature-item .btn:active,
 .btn-studio:hover,
 .btn-studio:focus,
 .btn-studio:active,
@@ -159,7 +167,6 @@ h1 {
 .btn-slide:active {
     background-color: var(--special);  
 }
-
 
 .illustration {
     width: 300px;
@@ -179,7 +186,7 @@ h1 {
 .index-columns h4 {
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--basis-dark);
+    color: var(--basis-dark-black);
 }
 
 .nerds-illustration {
@@ -200,13 +207,13 @@ h1 {
 }
 
 .description {
-    color: #283136;
+    color: var(--basis-dark-black);
     line-height: 18px;
 }
 
 /*Contacts*/
 
-.name-studio {
+.subtitle {
     text-transform: uppercase;
     color: var(--basis-black);
     font-weight: bold;
@@ -226,6 +233,8 @@ h1 {
     height: 50px;
     border: none;
     color:var(--basic-white);
+    font-size: 16px;
+    font-weight: 500;
     line-height: 18px;
     align-items: center;
     text-align: center;
@@ -238,16 +247,14 @@ h1 {
     list-style: none;
 }
 
-.social-button img {
+ .social-button  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 81px;
     height:81px;
     border-radius: 50%;
     background-color: var(--basic-extra-light);
-}
-
-.vk {
-    width: 27px;
-    height: 15px;
 }
 
 .slogan {
@@ -255,3 +262,49 @@ h1 {
     font-size: 36px;
     line-height: 36px;
 }
+
+
+/*Inner-page*/
+
+.inner-page h1 {
+    text-align: center;
+}
+
+.filter {
+    background-color:  var(--basic-extra-light);
+    color: var(--basis-black);
+    width: 260px;
+}
+
+.sort-item {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-neutral);
+    text-transform: uppercase;
+}
+
+.sort-item:focus,
+.sort-item:active,
+.sort-item:hover {
+    color: var(--basis-black);
+}
+
+.popup-price {
+    width: 200px;
+}
+
+.item {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--basis-black);
+}
+
+.popup-windows {
+    text-align: center;
+    background-color: var(--basic-extra-light);
+    width: 360px;
+    height: 231px;
+}
+

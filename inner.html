@@ -4,120 +4,129 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-<header>
-  <nav>
+<body class="inner-page">
+<header class="main-header">
+  <nav class="main-navigation" >
     <a href="index.html">
       <img src="img/nerds-logo.svg"width="160" height="65"  alt="Логотип nerd's">
     </a>
-
-    <ul>
-      <li>
-        <a href="blank.html">Студия</a>
-      </li>
-      <li>
-        <a href="clients.html">Клиенты</a>
-      </li>
-      <li>
-        <a href="catalog.html">Магазин</a>
-      </li>
-      <li>
-        <a href="contacts.html">Контакты</a>
-      </li>
-    </ul>
-    <a href="">
-      <img src="img/cart-icon.svg">
-      <span>Корзина</span>
-    </a>
+    <div class="main-navigation-wrapper">
+      <ul class="site-navigation">
+        <li>
+          <a href="blank.html">Студия</a>
+        </li> 
+        <li>
+            <a href="clients.html">Клиенты</a>
+        </li>
+        <li>
+          <a href="catalog.html">Магазин</a>
+        </li>
+        <li>
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <div class="basket">
+        <a href="">
+          <img src="img/cart-icon.svg">
+          <span class="basker-color">Корзина</span>
+        </a>
+      </div>
+    </div>
   </nav>
 
   <h1>Магазин готовых шаблонов</h1>
 </header>
 
-<main>
-  <div>
-    <section>
-      <p>Сортировать:</p>
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По названию</p>
+<main class="inner-main">
+  <div class="inner-sorter">
+    <section class="catalog_sorter" >
+      <span class="subtitle">Сортировать:</span>
+      <a class="sort-item">
+        <span>По цене</span>
+      </a>
+      <a class="sort-item">
+        <span>По типу</span>
+      </a>
+      <a class="sort-item">
+        <span>По названию</span>
+      </a>
 
       <div>
         <img src="img/Mask Group (1).jpg" alt="Sedona">
-        <div>
-          <p>Sedona</p>
+        <div class="popup-windows">
+          <p class="subtitle">Sedona</p>
           <p>Информационный сайт для туристов</p>
-          <button>9 900 ₽</button>
+          <button class="btn-studio popup-price">9 900 ₽</button>
         </div>
       </div>
 
       <div>
         <img src="img/Mask Group (2).jpg" alt="Pink">
-        <div>
-          <p>Pink</p>
+        <div class="popup-windows">
+          <p class="subtitle">Pink</p>
           <p>Информационный сайт для туристов</p>
-          <button>9 900 ₽</button>
+          <button button class="btn-studio popup-price">9 900 ₽</button>
         </div>
       </div>
 
       <div>
         <img src="img/Mask Group (3).jpg" alt="Barber">
-        <div>
-          <p>Sedona</p>
+        <div class="popup-windows">
+          <p class="subtitle">Sedona</p>
           <p>Информационный сайт для туристов</p>
-          <button>9 900 ₽</button>
+          <button button class="btn-studio popup-price">9 900 ₽</button>
         </div>
       </div>
 
       <div>
         <img src="img/Mask Group (4).jpg" alt="Mishka">
-        <div>
-          <p>Sedona</p>
+        <div class="popup-windows">
+          <p class="subtitle">Sedona</p>
           <p>Информационный сайт для туристов</p>
-          <button>9 900 ₽</button>
+          <button button class="btn-studio popup-price">9 900 ₽</button>
         </div>
       </div>
 
       <div>
         <img src="img/Mask Group (5).jpg" alt="Learn">
-        <div>
-          <p>Sedona</p>
+        <div class="popup-windows">
+          <p class="subtitle">Sedona</p>
           <p>Информационный сайт для туристов</p>
-          <button>9 900 ₽</button>
+          <button button class="btn-studio popup-price">9 900 ₽</button>
         </div>
       </div>
 
       <div>
         <img src="img/Mask Group (6).jpg" alt="Bear">
-        <div>
-          <p>Sedona</p>
+        <div class="popup-windows">
+          <p class="subtitle">Sedona</p>
           <p>Информационный сайт для туристов</p>
-          <button>9 900 ₽</button>
+          <button button class="btn-studio popup-price">9 900 ₽</button>
         </div>
       </div>
 
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>Следующая</li>
-      </ul>
+      <div class="pages">
+        <span class="current item">1</span>
+        <a class="item" href="">2</a>
+        <a class="item" href="">3</a>
+        <a class="item next arrow" href="" title="Next">Следующая</a>
+      </div>
     </section>
 
     <aside>
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get"></form>
       <div>
-        <p>Стоимость:</p>
+        <p class="subtitle">Стоимость:</p>
         <p>от</p>
         <p>до</p>
       </div>
       <fieldset>
-        <legend>Сетка:</legend>
-        <ul>
+        <legend class="subtitle">Сетка:</legend>
+        <ul class="order-list">
           <li>
             <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
             <label for="filter-adaptive">Адаптивная</label> 
@@ -133,8 +142,8 @@
         </ul>  
       </fieldset>
       <fieldset>
-        <legend>Особенности:</legend>
-        <ul>
+        <legend class="subtitle">Особенности:</legend>
+        <ul class="order-list">
           <li>
             <input type="checkbox" name="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
@@ -156,37 +165,43 @@
             <label for="filter-basket">Корзина</label> 
           </li>
         </ul>
-        <button">Показать</button>
+        <button class="btn-studio filter" type="button">Показать</button>
       </fieldset>
     </aside>
   </div>
   <section>
-    <h2>Контактная информация</h2>
+    <h2 class="visually-hidden">Контактная информация</h2>
       <div>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8тел.</p>
-        <p> +7 (812) 275-75-75</p>
-        <button>Напишите нам</button>
+        <p class="subtitle">NЁRDS DESIGN STUDIO</p>
+        <p class="adress-studio">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8тел.</p>
+        <p class="phone-studio"> +7 (812) 275-75-75</p>
+        <button class="btn-studio">Напишите нам</button>
       </div>
     <img src="img/map-marker 1.png" alt="map-marker">
     <img src="img/map 1.png" alt="map">
-  </section>
+  </section>   
+
 </main>
 
-<footer>
-  <ul>
-    <li>
-      <a href="#"><img src="img/vk-icon.svg" alt="vk">Вконтакте</a>
-    </li>
-    <li>
-      <a href="#"><img src="img/fb-icon.svg" alt="fb">Фейсбук</a>
-    </li>
-    <li>
-      <a href="#"><img src="img/insta-icon.svg" alt="insta">Инстаграм</a>
-    </li>
-  </ul>
-    <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+<footer class="page-footer main-footer">
+  <div class="container">
+    <ul class="footer-social">
+      <li>
+        <a class="social-button" href="#">
+          <img src="img/vk-icon.svg" class="vk" alt="vk"></a>
+      </li>
+      <li>
+        <a class="social-button" href="#">
+          <img src="img/fb-icon.svg" class="fb" alt="fb"></a>
+      </li>
+      <li>
+        <a class="social-button" href="#">
+          <img src="img/insta-icon.svg" class="insta" alt="insta"></a>
+      </li>
+    </ul>
+      <p class="slogan">Давайте дружить, это выгодно!</p>
+      <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+  </div>
 </footer>
 </body>
 </html>
