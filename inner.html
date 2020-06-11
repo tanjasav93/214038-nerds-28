@@ -12,7 +12,7 @@
   <nav class="main-navigation" >
     <div class="container">
       <a class="main-header-logo" href="">
-        <img src="img/nerds-logo.svg"  width="160" height="65"  alt="Логотип nerd's">
+        <img src="img/nerds-logo.svg" alt="Логотип nerd's">
       </a>
       <div class="main-navigation-wrapper">
         <ul class="site-navigation">
@@ -38,151 +38,159 @@
       </div>
     </div>
   </nav>
-
-  <h1 class="title inner">Магазин готовых шаблонов</h1>
 </header>
 
-<main class="inner-main">
-  <div class="inner-sorter">
-    <section class="catalog_sorter" >
-      <span class="subtitle">Сортировать:</span>
-      <a class="sort-item">
-        <span>По цене</span>
-      </a>
-      <a class="sort-item">
-        <span>По типу</span>
-      </a>
-      <a class="sort-item">
-        <span>По названию</span>
-      </a>
-
-      <div>
-        <img src="img/Mask Group (1).jpg" alt="Sedona">
-        <div class="popup-windows">
-          <p class="subtitle">Sedona</p>
-          <p>Информационный сайт для туристов</p>
-          <button class="btn-studio popup-price">9 900 ₽</button>
-        </div>
+<main class="page-catalog">
+  <div class="intro">
+    <div class="container">
+      <h1 class="title inner">Магазин готовых шаблонов</h1>
       </div>
-
-      <div>
-        <img src="img/Mask Group (2).jpg" alt="Pink">
-        <div class="popup-windows">
-          <p class="subtitle">Pink</p>
-          <p>Информационный сайт для туристов</p>
-          <button button class="btn-studio popup-price">9 900 ₽</button>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/Mask Group (3).jpg" alt="Barber">
-        <div class="popup-windows">
-          <p class="subtitle">Sedona</p>
-          <p>Информационный сайт для туристов</p>
-          <button button class="btn-studio popup-price">9 900 ₽</button>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/Mask Group (4).jpg" alt="Mishka">
-        <div class="popup-windows">
-          <p class="subtitle">Sedona</p>
-          <p>Информационный сайт для туристов</p>
-          <button button class="btn-studio popup-price">9 900 ₽</button>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/Mask Group (5).jpg" alt="Learn">
-        <div class="popup-windows">
-          <p class="subtitle">Sedona</p>
-          <p>Информационный сайт для туристов</p>
-          <button button class="btn-studio popup-price">9 900 ₽</button>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/Mask Group (6).jpg" alt="Bear">
-        <div class="popup-windows">
-          <p class="subtitle">Sedona</p>
-          <p>Информационный сайт для туристов</p>
-          <button button class="btn-studio popup-price">9 900 ₽</button>
-        </div>
-      </div>
-
-      <div class="pages">
-        <span class="current item">1</span>
-        <a class="item" href="">2</a>
-        <a class="item" href="">3</a>
-        <a class="item next arrow" href="" title="Next">Следующая</a>
-      </div>
+  </div>
+  <div class="container wrapper-content">
+    <section class="catalog-filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filters-catalog">
+        <fieldset class="filter-item">
+            <p class="subtitle">Стоимость:</p>
+            <p>от</p>
+            <p>до</p>
+        </fieldset>
+        <fieldset class="filter-item">
+            <legend class="subtitle">Сетка:</legend>
+            <ul class="order-list">
+              <li>
+                <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label> 
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label> 
+              </li>
+              <li>
+                <input type="radio" name="grid" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label> 
+              </li>
+            </ul>  
+        </fieldset>
+        <fieldset class="filter-item">
+            <legend class="subtitle">Особенности:</legend>
+            <ul class="order-list">
+              <li>
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="advantage" id="filter-advantage">
+                <label for="filter-advantage">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label> 
+              </li>
+            </ul>
+            <button class="btn-studio filter" type="button">Показать</button>
+        </fieldset>
+      </form>
     </section>
 
-    <aside>
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form action="https://echo.htmlacademy.ru" method="get"></form>
-      <div>
-        <p class="subtitle">Стоимость:</p>
-        <p>от</p>
-        <p>до</p>
-      </div>
-      <fieldset>
-        <legend class="subtitle">Сетка:</legend>
-        <ul class="order-list">
-          <li>
-            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-            <label for="filter-adaptive">Адаптивная</label> 
-          </li>
-          <li>
-            <input type="radio" name="grid" value="fixed" id="filter-fixed">
-            <label for="filter-fixed">Фиксированная</label> 
-          </li>
-          <li>
-            <input type="radio" name="grid" value="rubber" id="filter-rubber">
-            <label for="filter-rubber">Резиновая</label> 
-          </li>
-        </ul>  
-      </fieldset>
-      <fieldset>
-        <legend class="subtitle">Особенности:</legend>
-        <ul class="order-list">
-          <li>
-            <input type="checkbox" name="slider" id="filter-slider" checked>
-            <label for="filter-slider">Слайдер</label>
-          </li>
-          <li>
-            <input type="checkbox" name="advantage" id="filter-advantage">
-            <label for="filter-advantage">Блок преимуществ</label>
-          </li>
-          <li>
-            <input type="checkbox" name="news" id="filter-news" checked>
-            <label for="filter-news">Новости</label>
-          </li>
-          <li>
-            <input type="checkbox" name="gallery" id="filter-gallery">
-            <label for="filter-gallery">Галерея</label>
-          </li>
-          <li>
-            <input type="checkbox" name="basket" id="filter-basket">
-            <label for="filter-basket">Корзина</label> 
-          </li>
-        </ul>
-        <button class="btn-studio filter" type="button">Показать</button>
-      </fieldset>
-    </aside>
-  </div>
-  <section>
-    <h2 class="visually-hidden">Контактная информация</h2>
-      <div>
-        <p class="subtitle">NЁRDS DESIGN STUDIO</p>
-        <p class="adress-studio">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8тел.</p>
-        <p class="phone-studio"> +7 (812) 275-75-75</p>
-        <button class="btn-studio">Напишите нам</button>
-      </div>
-    <img src="img/map-marker 1.png" alt="map-marker">
-    <img src="img/map 1.png" alt="map">
-  </section>   
+    <section class="catalog-wrapper">
+          <div class="catalog-sorting">
+            <span class="subtitle">Сортировать:</span>
+            <div class="sort-list">
+              <a class="sort-item">
+                <span>По цене</span>
+              </a>
+              <a class="sort-item">
+                <span>По типу</span>
+              </a>
+              <a class="sort-item">
+                <span>По названию</span>
+              </a>
+            </div>
+         </div>
+         
+          <div class="catalog-list">
+            <div class="catalog-template">
+              <img src="img/Mask Group (1).jpg" width="360px" height="576px" alt="Sedona">
+              <!-- <div class="popup-windows">
+                  <p class="subtitle">Sedona</p>
+                  <p>Информационный сайт для туристов</p>
+                  <button class="btn-studio popup-price">9 900 ₽</button>
+              </div> -->
+            </div>
+      
+            <div class="catalog-template">
+              <img src="img/Mask Group (2).jpg" width="360px" height="576px"  alt="Pink">
+              <!-- <div class="popup-windows">
+                  <p class="subtitle">Pink</p>
+                  <p>Информационный сайт для туристов</p>
+                  <button button class="btn-studio popup-price">9 900 ₽</button>
+              </div> -->
+            </div>
+      
+            <div class="catalog-template">
+              <img src="img/Mask Group (3).jpg" width="360px" height="576px"  alt="Barber">
+              <!-- <div class="popup-windows">
+                  <p class="subtitle">Sedona</p>
+                  <p>Информационный сайт для туристов</p>
+                  <button button class="btn-studio popup-price">9 900 ₽</button>
+              </div> -->
+            </div>
+      
+            <div class="catalog-template">
+              <img src="img/Mask Group (4).jpg" width="360px" height="576px"  alt="Mishka">
+              <!-- <div class="popup-windows">
+                  <p class="subtitle">Sedona</p>
+                  <p>Информационный сайт для туристов</p>
+                  <button button class="btn-studio popup-price">9 900 ₽</button>
+              </div> -->
+            </div>
+      
+            <div class="catalog-template">
+              <img src="img/Mask Group (5).jpg" width="360px" height="576px"  alt="Learn">
+              <!-- <div class="popup-windows">
+                  <p class="subtitle">Sedona</p>
+                  <p>Информационный сайт для туристов</p>
+                  <button button class="btn-studio popup-price">9 900 ₽</button>
+              </div> -->
+            </div>
+      
+             <div class="catalog-template">
+              <img src="img/Mask Group (6).jpg" width="360px" height="576px"  alt="Bear">
+              <!-- <div class="popup-windows">
+                  <p class="subtitle">Sedona</p>
+                  <p>Информационный сайт для туристов</p>
+                  <button button class="btn-studio popup-price">9 900 ₽</button>
+              </div> -->
+             </div>
+          </div>
 
+          <div class="pagination-list">
+            <span class="current item">1</span>
+            <a class="item" href="#">2</a>
+            <a class="item" href="#">3</a>
+            <a class="item next arrow" href="#" title="Next">Следующая</a>
+        </div>
+    </section>
+  </div>
+  <div class="map-wrapper container">
+      <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contact">
+          <p class="subtitle">NЁRDS DESIGN STUDIO</p>
+          <p class="adress-studio">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8тел.</p>
+          <p class="phone-studio"> +7 (812) 275-75-75</p>
+          <button class="btn-studio">Напишите нам</button>
+        </div>
+      <img class="marker" src="img/map-marker 1.png" alt="map-marker">
+  </div>
 </main>
 
 <footer class="page-footer main-footer">
@@ -201,8 +209,10 @@
           <img src="img/insta-icon.svg" class="insta" alt="insta"></a>
       </li>
     </ul>
-      <p class="slogan">Давайте дружить, это выгодно!</p>
-      <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+    <div class="slogan-footer">
+        <p class="slogan">Давайте дружить, это выгодно!</p>
+        <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </div>
 </footer>
 </body>
